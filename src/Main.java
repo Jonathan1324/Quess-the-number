@@ -30,7 +30,7 @@ public class Main {
         textField.setBounds(50,100,300,30);
         text2.setBounds(10,10,300,20);
 
-        JButton button = new JButton("Raten!");
+        JButton button = new JButton("Guess!");
         button.setBounds(50,150,300,30);
 
         button.addActionListener(new ActionListener() {
@@ -42,7 +42,7 @@ public class Main {
                     guess(number);
                     text2.setText("It took you " + tries + " tries so far!");
                 } catch (Exception error) {
-                    text.setText("Gebe eine Zahl ein!");
+                    text.setText("Enter a number!");
                     textField.setText("");
                 }
             }
